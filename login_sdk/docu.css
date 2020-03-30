@@ -1,0 +1,80 @@
+body {
+	font-size: 15px;
+	font-family: "Roboto", sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+b,
+strong {
+	font-weight: 500;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.content {
+	box-sizing: border-box;
+	padding: 15px;
+	max-width: 100%;
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.pre-wrapper .actions {
+	font-size: 13px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+h1 {
+	font-size: 25px;
+	margin: 0;
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+.actions {
+	text-align: right;
+}
+
+.pre-wrapper {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	position: relative;
+	font-size: 13px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding: 15px;
+	background-color: #f6f6f6;
+}
+
+pre {
+	margin: 0;
+}
+
+table {
+	font-size: 14px;
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	background-color: #f6f6f6;
+}
+
+table td {
+	vertical-align: baseline;
+	padding: 5px;
+}
