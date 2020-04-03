@@ -1,16 +1,93 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1671.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-  </style>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Cam.TV Login API</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+	<link rel='stylesheet' type='text/css' media='screen' href='docu.css'>
+	<script src='docu.js'></script>
 </head>
+
 <body>
-<p class="p1">OK!</p>
+	<div class="content">
+		<h1>Cam.TV Login API</h1>
+		<p>
+			Tramite Cam.TV Login API è possibile integrare la funzionalità di login a Cam.TV su siti di terze parti. Per farlo, aggiungi all'interno della tua pagina HTML un tag <b>script</b> come indicato qui di seguito:
+		</p>
+		<div class="pre-wrapper">
+			<pre class="SdkScript"></pre>
+			<div class="actions ChangeEnv">
+				<a data-env="TEST" title="ambiente di test" href="#">TEST</a>
+				<a data-env="PROD" title="ambiente di produzione" href="#">LIVE</a>
+			</div>
+		</div>
+		<p>
+			In secondo luogo, effettua la chiamata all'API di Login eseguendo la seguente funzione al click sul bottone designato all'apertura del modulo di login di Cam.TV. L'API accetta 3 parametri in ingresso, come specificato di seguito:
+		</p>
+		<div class="pre-wrapper">
+			<pre>
+CTV.ExternalLogin(redirectUrl[, action, channelName]);
+</pre>
+		</div>
+		<h2>Parametri</h2>
+		<p>
+			I seguenti sono i parametri che l'API accetta in ingresso e la relativa descrizione:
+		</p>
+		<table>
+			<tbody>
+				<tr>
+					<td><strong>redirectUrl</strong></td>
+					<td>È l'URL al quale verrà effettuato il reindirizzamento una volta completato il login da parte dell'utente</td>
+				</tr>
+				<tr>
+					<td><strong>action</strong></td>
+					<td>
+						<small>(opzionale)</small> Determina quale modulo di login verrà mostrato
+						<ul>
+							<li>
+								CTV.ACTION.CREATE: <small>(default)</small> da usare qualora l'utente abbia intenzione di creare un nuovo account
+							</li>
+							<li>
+								CTV.ACTION.LOGIN: da usare qualora l'utente abbia intenzione di effettuare il login
+							</li>
+							<li>
+								CTV.ACTION.CREATE_CHANNEL: da usare qualora l'utente venga invitato ad iscriversi tramite un canale già esistente su Cam.TV
+							</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td><strong>channelName</strong></td>
+					<td><small>(opzionale)</small> Solo con parametro <i>action</i> uguale a <i>CTV.ACTION.CREATE_CHANNEL</i>. Permette di specificare il nome del canale di un utente cha fa già parte di Cam.TV</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2>Esempio completo</h2>
+		<p>
+
+		</p>
+		<div class="pre-wrapper">
+			<pre class="SdkScript"></pre>
+			<pre>
+&lt;button onclick="Login()"&gt;Login&lt;/button&gt;
+&lt;script&gt;
+    function Login() {
+        var redirectUrl = "https://www.miosito.it";
+        var action = CTV.ACTION.CREATE;
+        CTV.ExternalLogin(redirectUrl[, action, channelName]);
+    }
+&lt;/script&gt;
+</pre>
+			<div class="actions ChangeEnv">
+				<a data-env="TEST" title="ambiente di test" href="#">TEST</a>
+				<a data-env="PROD" title="ambiente di produzione" href="#">LIVE</a>
+			</div>
+		</div>
+	</div>
 </body>
+
 </html>
