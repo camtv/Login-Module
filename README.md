@@ -13,7 +13,7 @@ Tramite Cam.TV Login API è possibile integrare la funzionalità di login a Cam.
 ```
 CTV.ExternalLogin(redirectUrl);
 ```
-dove redirectUrl l'URL al quale verrà effettuato il reindirizzamento una volta completato il login da parte dell'utente
+dove `redirectUrl` è l'URL al quale verrà effettuato il reindirizzamento una volta completato il login da parte dell'utente
 
 
 ### Esempio completo
