@@ -27,7 +27,7 @@ I parametri accettati dall'API di login sono:
 
 ### Esempio completo
 ```
-<script src="https://www.cam.tv/assets/js/camtv_login_v3.js"></script>
+<script src="https://www.cam.tv/login/extern_login.js"></script>
 <button onclick="Login()">Login</button>
 <script>
     function Login() {
