@@ -16,6 +16,17 @@ strong {
 	font-weight: 500;
 }
 
+button {
+	background-color: #FF7800;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    margin: auto;
+	display: block;
+	cursor:pointer;
+}
+
 a:hover {
 	text-decoration: underline;
 }
