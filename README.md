@@ -18,7 +18,7 @@ dove redirectUrl l'URL al quale verrà effettuato il reindirizzamento una volta 
 
 ### Esempio completo
 
-Di seguito è riportato un esempio di invocazione dell'API di login tramite la gestione dell'evento click su un button. E' possibile provare operativamente l'esempio al seguente url: https://camtv.github.io/login-module/
+Di seguito è riportato un esempio di invocazione dell'API di login tramite la gestione dell'evento click su un button. E' possibile provare operativamente l'esempio al seguente url: [https://camtv.github.io/login-module/](https://camtv.github.io/login-module/)
 
 
 ```
