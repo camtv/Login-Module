@@ -1,7 +1,7 @@
 # Cam.TV Login API
 Tramite Cam.TV Login API è possibile integrare la funzionalità di login a Cam.TV su siti di terze parti. 
 
-Procedura: 
+### Procedura: 
 * Aggiungere all'interno della tua pagina HTML un tag script come indicato qui di seguito:
 
 ```
@@ -23,7 +23,7 @@ I parametri che l'API accetta sono:
     * CTV.ACTION.CREATE_CHANNEL: da usare qualora l'utente venga invitato ad iscriversi tramite un canale già esistente su Cam.TV
 * channelName	(opzionale) Solo con parametro action uguale a CTV.ACTION.CREATE_CHANNEL. Permette di specificare il nome del canale di un utente cha fa già parte di Cam.TV
 
-## Esempio completo
+### Esempio completo
 ```
 <script src="https://www.cam.tv/assets/js/camtv_login_v3.js"></script>
 <button onclick="Login()">Login</button>
