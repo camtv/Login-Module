@@ -1,7 +1,7 @@
 # Cam.TV Login API
 Tramite Cam.TV Login API è possibile integrare la funzionalità di login a Cam.TV su siti di terze parti. 
 
-### Procedura: 
+### Procedura di integrazione: 
 * Aggiungere all'interno della tua pagina HTML un tag script come indicato qui di seguito:
 
 ```
@@ -14,7 +14,9 @@ Tramite Cam.TV Login API è possibile integrare la funzionalità di login a Cam.
 CTV.ExternalLogin(redirectUrl[, action, channelName]);
 ```
 
-I parametri che l'API accetta sono:
+### Parametri dell'API:
+
+I parametri accettati dall'API di login sono:
 
 * redirectUrl	È l'URL al quale verrà effettuato il reindirizzamento una volta completato il login da parte dell'utente
 * action	(opzionale) Determina quale modulo di login verrà mostrato
