@@ -37,7 +37,7 @@ Di seguito è riportato un esempio di invocazione dell'API di login tramite la g
     function Login() {
         var redirectUrl = "https://www.miosito.it";
         var action = CTV.ACTION.CREATE;
-        CTV.ExternalLogin(redirectUrl[, action, channelName]);
+        CTV.ExternalLogin(redirectUrl, action);
     }
 </script>
 ```
