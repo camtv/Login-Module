@@ -26,6 +26,10 @@ I parametri accettati dall'API di login sono:
 * channelName	(opzionale) Solo con parametro action uguale a CTV.ACTION.CREATE_CHANNEL. Permette di specificare il nome del canale di un utente cha fa già parte di Cam.TV
 
 ### Esempio completo
+
+Di seguito è riportato un esempio di invocazione dell'API di login tramite la gestione dell'evento click su un button. E' possibile provare operativamente l'esempio al seguente url:
+
+
 ```
 <script src="https://www.cam.tv/login/extern_login.js"></script>
 <button onclick="Login()">Login</button>
